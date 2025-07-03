@@ -1,0 +1,43 @@
+@media only screen and (orientation:landscape)
+{
+
+    .container-photos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 10%;
+        gap: 2rem;
+    }
+img{
+    width: 100%;
+    object-fit: cover;
+    min-height:100%;
+    border-radius: 50%;
+}
+}
+@media only screen and (orientation:portrait)
+{
+    img {
+        width: 50%;
+        border-radius: 50%;
+    }
+}
+
+img:hover {
+    border-radius: 20%;
+}
+.center {
+    text-align: center;
+}
+body {
+    /*background: radial-gradient(black, grey, whitesmoke, white);*/
+    background: radial-gradient(whitesmoke,grey, black);
+    color: white;
+
+}
+.name {
+    color: lightblue;
+    text-shadow: 0px 0px 13px blue;
+}
+.white {
+    color: white;
+}
