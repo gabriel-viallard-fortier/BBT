@@ -1,0 +1,130 @@
+
+        /* Media queries MAX WIDTH à REVOIR pour optimisation*/
+        @media only screen and (max-width: 760px)
+        {
+        .container {
+        flex-wrap: wrap;
+        }
+        .service {
+          margin: 0 auto;
+        }   
+        fieldset {
+        margin-left:2rem;
+
+        }
+        input{
+        max-width:80%;
+        }
+        textarea {
+        max-width:80%;
+        height:10rem;
+        }
+        #rendez-vous {
+    			
+    	background-color: #c31919; /* Couleur à déterminer !*/
+  		}
+}
+        /* Media queries  MIN WIDTH*/
+        @media only screen and (min-width: 980px)   {
+        .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        .service {
+        width: calc(33.333% - 20px);
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        }
+        .service-image img {
+        width: 100%;
+        height: auto;
+        }
+        .service-text {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+        .grid-form {
+        flex:1 1 100px;
+        width: calc(33.333% - 20px);
+        display: flex-inline;
+        }
+        }
+        /* Media queries  MIN WIDTH*/
+        @media only screen and (min-width: 760px)   {
+        .header-text {
+        display: block;
+        }
+        .service {
+        height: 400px;
+        flex-direction: column ; /* Inverse la disposition en colonne */
+        text-align: center; /* Centre le texte pour l'esthétique */
+        }
+
+        .service-text, .service-image {
+        flex: unset; /* Annule les proportions en flex */
+        }
+
+        .service-image img {
+
+        max-width: 100%; /* L'image prend toute la largeur en version mobile */
+        }
+         /* Fieldset en une colonne */
+        fieldset {
+        grid-template-columns: 1fr; /* Forcer une seule colonne */
+        padding: 1rem; /* Réduire l’espacement interne */
+        }
+
+        /* Form-group : aligner verticalement */
+        .form-group {
+          flex-direction: column;
+          align-items: start;
+          gap: 0.5rem;
+          justify-content: center;
+          text-align: start; /* Centrer le texte pour l'esthétique */
+          margin-bottom: 1rem; /* Espacement entre les groupes de champs */
+        }
+
+        .form-group label {
+        min-width: unset; /* Supprimer la largeur minimale */
+        flex: unset; /* Libérer l'espace pour que le label utilise la largeur nécessaire */
+        width: 100%; /* Le label occupe toute la largeur */
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+        width: 80%; /* Les champs prennent toute la largeur */
+        }
+        }
+@media only screen and (max-width: 760px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .service {
+    
+    margin-bottom: 2rem;
+  }
+
+  fieldset {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  input{
+    max-width: 50%;
+  }
+}
+
+textarea {
+  height:150px;
+  width: 150px;
+  resize : none;
+  max-width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}

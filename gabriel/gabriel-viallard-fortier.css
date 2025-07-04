@@ -1,0 +1,19 @@
+body {
+    background-image: url(nil.jpeg);
+
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+    align-self:last baseline;
+    overflow:hidden;
+}
+.presentation {
+    width: 15%;
+    margin-top: 20%;
+
+}
+p {
+    text-align: center;
+}
