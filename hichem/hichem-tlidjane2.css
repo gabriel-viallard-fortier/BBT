@@ -1,3 +1,5 @@
+test
+
 h1,h2,header {
     text-align: center;
 }
@@ -13,9 +15,9 @@ body {
 body {
   font-size: 16px;
 }
-
 .information {
     display: flex;
+    flex-direction: column;
 }
 .encadre {
   border: 1px solid #ccc;
