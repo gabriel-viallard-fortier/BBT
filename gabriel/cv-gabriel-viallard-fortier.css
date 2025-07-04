@@ -26,11 +26,14 @@ img {
     width: 200px; /* ou 50%, selon ton besoin */
     height: auto;
 }
+html {
+    background: radial-gradient(lightblue, rgb(33, 33, 153), blueviolet);
 
+}
 body{
-    background: linear-gradient(lightblue, rgb(33, 33, 153), blueviolet);
     color: whitesmoke;
     font-size: 1.2rem;
+    height: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 @media screen and (max-width: 640px)

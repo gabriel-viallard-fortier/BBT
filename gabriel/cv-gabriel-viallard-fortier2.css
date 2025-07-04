@@ -79,11 +79,13 @@ mark {
 }
 
 .green {
+    width: 50%;
+    margin: 0 auto;
     background-color: brown;
     color: yellow;
 }
 .whiteblur{
-    text-shadow: 2px 2px 2px yellow;
+    text-shadow: 2px 2px 2px black;
 }
 .caps {
     font-variant: small-caps;
